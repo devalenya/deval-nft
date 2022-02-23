@@ -157,7 +157,7 @@ const ipfsClient = create("https://ipfs.infura.io:5001/api/v0");
             } else{
                 window.alert(" UNlock Your Wallet Or Please install any provider wallet like MetaMask")
                 
-               
+                router.push("https://metamask.io/download.html")
             }
 
          
@@ -165,7 +165,7 @@ const ipfsClient = create("https://ipfs.infura.io:5001/api/v0");
 
  
            }else{
-               window.alert("You are at Wrong Network, set youe metamask wallet to GODWOKEN POLYJUICE TESTNET then reload your page")
+               window.alert("You are at Wrong Netweok, Connect with Roposten Please")
            }
 
 
@@ -186,25 +186,24 @@ const ipfsClient = create("https://ipfs.infura.io:5001/api/v0");
         <div className="flex justify-center">
             <div className = "w-1/2 flex flex-col pb-11">
                 <input
-                className = "mt-8 borderd rounded p-3 bg-pink-200"
+                className = "mt-8 borderd rounded p-3 bg-gray-200"
                 placeholder="Enter your NFT Name"
                 onChange = {e=>setNftFormInput({...nftFormInput,name:e.target.value})}
                 />
                  <input
-                className = "mt-8 borderd rounded p-3 bg-pink-200"
-                placeholder="Enter your NFT Price "
-                value="500" 
+                className = "mt-8 borderd rounded p-3 bg-gray-200"
+                placeholder="Enter your NFT Price in Ether"
                 onChange = {e=>setNftFormInput({...nftFormInput,price:e.target.value})}
-                disabled/>
+                />
                  <textarea
-                className = "mt-8 borderd rounded p-3 bg-pink-200"
+                className = "mt-8 borderd rounded p-3 bg-gray-200"
                 placeholder="Enter your NFT Description"
                 onChange ={e=>setNftFormInput({...nftFormInput,description:e.target.value})}
                 />
 
             
                  <div className="grid grid-cols-1 space-y-2 py-4">
-                                    <label className="text-sm font-bold text-pink-500 tracking-wide">Your NFT Art</label>
+                                    <label className="text-sm font-bold text-gray-500 tracking-wide">Attach the Image</label>
                         <div className="flex items-center justify-center w-full">
                             <label className="flex flex-col rounded-lg border-4 border-dashed w-full h-60 p-10 group text-center">
                                 <div className="h-full w-full text-center flex flex-col justify-center items-center  ">
@@ -213,12 +212,12 @@ const ipfsClient = create("https://ipfs.infura.io:5001/api/v0");
                                     </svg>
                                     <div className="flex flex-auto max-h-48 w-2/5 mx-auto -mt-10">
                                         {
-                                            urlHash?    <img className="has-mask  object-center" src={urlHash} alt="freepik image"/> :                                   <img className="has-mask h-36 object-center" src="https://exchange.mixontoken.com/wp-content/uploads/2022/02/favicon.png?ext=png" alt="NFT art"/>
+                                            urlHash?    <img className="has-mask  object-center" src={urlHash} alt="freepik image"/> :                                    <img className="has-mask h-36 object-center" src="https://img.freepik.com/free-vector/image-upload-concept-landing-page_52683-27130.jpg?size=338&ext=jpg" alt="freepik image"/>
 
 
                                         }
                                     </div>
-                                    <p className="pointer-none text-white-500 "><span className="text-sm">Drag and drop</span> files here <br /> or <a  id="" className="text-white-600 hover:underline">select a file</a> from your computer</p>
+                                    <p className="pointer-none text-gray-500 "><span className="text-sm">Drag and drop</span> files here <br /> or <a  id="" className="text-blue-600 hover:underline">select a file</a> from your computer</p>
                                 </div>
                                 <input type="file" onChange={onChange} />
                             </label>
@@ -228,7 +227,7 @@ const ipfsClient = create("https://ipfs.infura.io:5001/api/v0");
                                 <span>File type: png,jpg,jpeg</span>
                             </p>
 
-                            <button className="font-bold bg-pink-500 mt-5 rounded p-4 text-white"  onClick={createMarketItem}>Mint Your NFT</button>
+                            <button className="font-bold bg-yellow-500 mt-5 rounded p-4 text-white"  onClick={createMarketItem}>Submit Your NFT</button>
 
                     
         </div>
