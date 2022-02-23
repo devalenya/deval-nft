@@ -3,8 +3,6 @@ import Link from "next/link"
 import { useState,useEffect } from 'react'
 import Web3 from "web3"
 import detectEthereumProvider from '@metamask/detect-provider'
-import { PolyjuiceHttpProvider } from '@polyjuice-provider/web3';
-import { AddressTranslator } from 'nervos-godwoken-integration';
 
 
 
