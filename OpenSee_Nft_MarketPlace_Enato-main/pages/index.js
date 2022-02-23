@@ -39,7 +39,7 @@ export default function Home() {
                 })
             } else {
 
-              window.alert(" UNlock Your Wallet Or Please install any provider wallet like MetaMask")
+              window.alert(" Connect Your Wallet Or Please install provider wallet like MetaMask")
                 
               router.push("https://metamask.io/download.html")
             }
@@ -145,13 +145,14 @@ export default function Home() {
               }))
 
               setUnsoldItems(items)
+                window.alert("You Are Now Connected To The Nervos Network")
          
 
 
 
  
            }else{
-               window.alert("You are at Wrong Netweok, Connect with Roposten Please")
+               window.alert("You are at Wrong Network, please set your wallet to Polijuice Nervos Testnet and refresh the page")
            }
 
 
@@ -182,8 +183,6 @@ const buyNFT = async (nftItem)=>{
 
 
 
-
-
     return (
          <div >
            {
@@ -193,12 +192,12 @@ const buyNFT = async (nftItem)=>{
            {
              (unsoldItems.length < 5 )?
               <>
-              <h1 className=" py-20 text-4xl tracking-tight font-extrabold text-yellow-500 sm:text-5xl md:text-6xl">
-                  <span className="block lg:py-3 xl:inline">There is Lessthan 5 NFts </span>
+              <h1 className=" py-20 text-4xl tracking-tight font-extrabold text-pink-500 sm:text-5xl md:text-6xl">
+                  <center><span className="block lg:py-3 xl:inline">Our Five Latest NFts </span></center>
                   </h1> 
              </>:
              <>
-              <h1 className=" px-20 text-xl tracking-tight font-extrabold text-yellow-500 sm:text-3xl md:text-4xl">
+              <h1 className=" px-20 text-xl tracking-tight font-extrabold text-pink-500 sm:text-3xl md:text-4xl">
                   <span className="block lg:py-3 xl:inline">Top Newest NFts Today </span>
                   </h1> 
              <div className = "flex justify-center p-2 m-3">
@@ -232,12 +231,12 @@ const buyNFT = async (nftItem)=>{
            <div className = "flex justify-center">
              
                <div className="px-4 " style={{maxWidth:"1600px"}}>
-               <h1 className=" px-10 text-xl tracking-tight font-extrabold text-yellow-500 sm:text-3xl md:text-4xl">
-                  <span className="block lg:py-3 xl:inline">Explore All Nfts Nad Buy</span>
+               <h1 className=" px-10 text-xl tracking-tight font-extrabold text-pink-500 sm:text-3xl md:text-4xl">
+                  <center><span className="block lg:py-3 xl:inline">Explore All Minted Nfts </span></center>
                   </h1> 
               {
                   !unsoldItems.length ? 
-                   <h1 className=" py-20 text-4xl tracking-tight font-extrabold text-yellow-500 sm:text-5xl md:text-6xl">
+                   <h1 className=" py-20 text-4xl tracking-tight font-extrabold text-pink-500 sm:text-5xl md:text-6xl">
                   <span className="block lg:py-3 xl:inline">Explore the High Uinque Nfts Item </span>
                   </h1> :<>
 
@@ -252,9 +251,9 @@ const buyNFT = async (nftItem)=>{
       <div className="w-80 mt-24 m-auto lg:mt-16 max-w-sm">
         <img src={item.image} alt=""className="rounded-t-2xl shadow-2xl lg:w-full 2xl:w-full 2xl:h-44 object-cover"/>
         <div className="bg-white shadow-2xl rounded-b-3xl">
-          <h2 className="text-center text-gray-800 text-2xl font-bold pt-6">{item.name}</h2>
+          <h2 className="text-center text-pink-800 text-2xl font-bold pt-6">{item.name}</h2>
           <div className="w-5/6 m-auto">
-            <p className="text-center text-gray-500 pt-5"> {item.description}</p>
+            <p className="text-center text-pink-500 pt-5"> {item.description}</p>
           </div>
           <div className="grid grid-cols-4 w-72 lg:w-5/6 m-auto bg-indigo-50 mt-5 p-4 lg:p-4 rounded-2xl">
             <div className="col-span-1 flex">
@@ -263,12 +262,12 @@ const buyNFT = async (nftItem)=>{
             </div>
             <div className="col-span-2 pt-1 ">
               <p className="text-gray-800 font-bold lg:text-sm">Price</p>
-              <p className="text-gray-500 text-sm font-bold">{item.price} ETH</p>
+              <p className="text-gray-500 text-sm font-bold">{item.price} CKB</p>
             </div>
         
           </div>
-          <div className="bg-gray-800 w-72 lg:w-5/6 m-auto mt-6 p-2 hover:bg-yellow-500 rounded-2xl  text-white text-center shadow-xl shadow-bg-blue-700">
-            <button classNames="lg:text-sm text-lg font-bold" onClick = {()=>buyNFT(item)}>Proceed to Buy</button>
+          <div className="bg-gray-800 w-72 lg:w-5/6 m-auto mt-6 p-2 hover:bg-pink-500 rounded-2xl  text-white text-center shadow-xl shadow-bg-blue-700">
+            
           </div>
           <div className="text-center m-auto mt-6 w-full h-1">
           </div>
@@ -293,4 +292,6 @@ const buyNFT = async (nftItem)=>{
              
          </div>
     )
+
+
 }
