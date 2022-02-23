@@ -192,7 +192,7 @@ const ipfsClient = create("https://ipfs.infura.io:5001/api/v0");
                 />
                  <input
                 className = "mt-8 borderd rounded p-3 bg-pink-200"
-                placeholder="Enter your NFT Price in Ether" value="0.02"
+                placeholder="Enter your NFT Price in Ether"
                 onChange = {e=>setNftFormInput({...nftFormInput,price:e.target.value})}
                 />
                  <textarea
