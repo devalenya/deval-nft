@@ -1,30 +1,37 @@
 import React from 'react'
 
- const HeadAccount = (props) => {
+ const MycardItem = () => {
     return (
         <div>
-<div className="flex justify-center items-center">
-<div className="w-3/3  rounded-lg shadow-sm p-8">
-<div className="flex justify-between items-center">
-<h1 className="font-extrabold tracking-wider">My Account Information:</h1>
-<button className="hover:bg-blue-50 p-2 rounded-sm">
-</button></div><div className="flex flex-col mt-5 gap-7 text-sm">
-<div className="bg-yellow-50 flex justify-between items-center p-3 rounded-sm shadow-sm">
-<div className="flex justify-start items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-yellow-500" viewBox="0 0 20 20" fill="currentColor">
-<path fill-rule="evenodd" d="M4 2a2 2 0 00-2 2v11a3 3 0 106 0V4a2 2 0 00-2-2H4zm1 14a1 1 0 100-2 1 1 0 000 2zm5-1.757l4.9-4.9a2 2 0 000-2.828L13.485 5.1a2 2 0 00-2.828 0L10 5.757v8.486zM16 18H9.071l6-6H16a2 2 0 012 2v2a2 2 0 01-2 2z" clip-rule="evenodd"></path></svg><div>
-<p className="text-gray-700 font-bold tracking-wider">Wallet Address:{props.children.account}</p>
-<p className="text-yellow-700 font-bold tracking-wider">Balance : {props.children.balance} ETH</p>
+    <div className="h-screen">
+      <div className="w-80 mt-24 m-auto lg:mt-16 max-w-sm">
+        <img src="https://image.freepik.com/free-vector/app-development-illustration_52683-47931.jpg" alt=""className="rounded-t-2xl shadow-2xl lg:w-full 2xl:w-full 2xl:h-44 object-cover"/>
+        <div className="bg-white shadow-2xl rounded-b-3xl">
+          <h2 className="text-center text-gray-800 text-2xl font-bold pt-6">Nft Name</h2>
+          <div className="w-5/6 m-auto">
+            <p className="text-center text-gray-500 pt-5"> Description You can now listen to millions of songs, audiobooks ands podcasts on any device anywhere you like!</p>
+          </div>
+          <div className="grid grid-cols-4 w-72 lg:w-5/6 m-auto bg-indigo-50 mt-5 p-4 lg:p-4 rounded-2xl">
+            <div className="col-span-1 flex">
+ 
+              <img className="flex justify-center w-15 lg:w-12" src="https://img.icons8.com/fluency/48/000000/ethereum.png" alt="music icon"/>
+            </div>
+            <div className="col-span-2 pt-1 ">
+              <p className="text-gray-800 font-bold lg:text-sm">Price</p>
+              <p className="text-gray-500 text-sm font-bold">2 ETH</p>
+            </div>
+        
+          </div>
+          <div className="bg-gray-800 w-72 lg:w-5/6 m-auto mt-6 p-2 hover:bg-yellow-500 rounded-2xl  text-white text-center shadow-xl shadow-bg-blue-700">
+            <button classNames="lg:text-sm text-lg font-bold">Proceed to Buy</button>
+          </div>
+          <div className="text-center m-auto mt-6 w-full h-1">
+          </div>
         </div>
+      </div>
+    </div>
         </div>
-        </div>
-        </div>
-
-        </div>
-        </div>
-        </div>
-
-
     )
 }
 
-export default HeadAccount;
+export default MycardItem;
