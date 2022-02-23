@@ -4,6 +4,7 @@ import { useState,useEffect } from 'react'
 import Web3 from "web3"
 import detectEthereumProvider from '@metamask/detect-provider'
 import axios from 'axios'
+import MycardItem from '../components/MycardItem'
 import { useRouter } from 'next/router'
 import HeadAccount from '../components/HeadAccount'
 import NewImageHead from '../components/NewImageHead'
