@@ -186,24 +186,24 @@ const ipfsClient = create("https://ipfs.infura.io:5001/api/v0");
         <div className="flex justify-center">
             <div className = "w-1/2 flex flex-col pb-11">
                 <input
-                className = "mt-8 borderd rounded p-3 bg-gray-200"
+                className = "mt-8 borderd rounded p-3 bg-pink-200"
                 placeholder="Enter your NFT Name"
                 onChange = {e=>setNftFormInput({...nftFormInput,name:e.target.value})}
                 />
                  <input
-                className = "mt-8 borderd rounded p-3 bg-gray-200"
+                className = "mt-8 borderd rounded p-3 bg-pink-200"
                 placeholder="Enter your NFT Price in Ether"
                 onChange = {e=>setNftFormInput({...nftFormInput,price:e.target.value})}
                 />
                  <textarea
-                className = "mt-8 borderd rounded p-3 bg-gray-200"
+                className = "mt-8 borderd rounded p-3 bg-pink-200"
                 placeholder="Enter your NFT Description"
                 onChange ={e=>setNftFormInput({...nftFormInput,description:e.target.value})}
                 />
 
             
                  <div className="grid grid-cols-1 space-y-2 py-4">
-                                    <label className="text-sm font-bold text-gray-500 tracking-wide">Attach the Image</label>
+                                    <label className="text-sm font-bold text-gray-500 tracking-wide">yOUR NFT ART</label>
                         <div className="flex items-center justify-center w-full">
                             <label className="flex flex-col rounded-lg border-4 border-dashed w-full h-60 p-10 group text-center">
                                 <div className="h-full w-full text-center flex flex-col justify-center items-center  ">
@@ -217,17 +217,17 @@ const ipfsClient = create("https://ipfs.infura.io:5001/api/v0");
 
                                         }
                                     </div>
-                                    <p className="pointer-none text-gray-500 "><span className="text-sm">Drag and drop</span> files here <br /> or <a  id="" className="text-blue-600 hover:underline">select a file</a> from your computer</p>
+                                    <p className="pointer-none text-pink-500 "><span className="text-sm">Drag and drop</span> files here <br /> or <a  id="" className="text-blue-600 hover:underline">select a file</a> from your computer</p>
                                 </div>
                                 <input type="file" onChange={onChange} />
                             </label>
                         </div>
                     </div>
-                            <p className="text-sm text-gray-300">
+                            <p className="text-sm text-pink-300">
                                 <span>File type: png,jpg,jpeg</span>
                             </p>
 
-                            <button className="font-bold bg-yellow-500 mt-5 rounded p-4 text-white"  onClick={createMarketItem}>Submit Your NFT</button>
+                            <button className="font-bold bg-pink-500 mt-5 rounded p-4 text-white"  onClick={createMarketItem}>Mint Your NFT</button>
 
                     
         </div>
