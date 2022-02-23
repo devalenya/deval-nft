@@ -94,23 +94,23 @@ const HeadSection = () => {
                    </div>
                    <main className="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
                    <div className="sm:text-center lg:text-left">
-                   <h1 className="text-4xl tracking-tight font-extrabold text-yellow-500 sm:text-5xl md:text-6xl">
-                       <span className="block lg:py-3 xl:inline">Upload Your NFTs </span>
-                       <span className="block dark:text-white xl:inline">Discover, Collect, and Sell Extraordinary NFTs</span>
+                   <h1 className="text-4xl tracking-tight font-extrabold text-pink-500 sm:text-5xl md:text-6xl">
+                       <span className="block lg:py-3 xl:inline" >Upload Your NFTs Image</span>
+                       <span className="block dark:text-white xl:inline">Discover, Collect, and Mint Extraordinary NFTs</span>
                        </h1>
                        <p className="mt-3 text-base dark:text-white sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0" >
-                       on the world's first & largest NFT marketplace,this Arabic Dapps Course that is will learn more about nfts and solidity programming language   </p>
+                       on the world's first & largest NFT marketplace, Exknowplay NFT is a native token, acquired by simply holding NFT, that can be sold.   </p>
                     
                            <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                        <div className="rounded-md shadow">
                            {
                                !account?      
                         <button className=" w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-red-500 hover:bg-gray-700 md:py-4 md:text-lg md:px-10"onClick={connectMetamask} >Connect Wallet</button>:
-                        <button className=" w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gray-500 hover:bg-gray-700 md:py-4 md:text-lg md:px-10" >{account.toString()}</button>
+                        <button className=" w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-pink-500 hover:bg-gray-700 md:py-4 md:text-lg md:px-10" >{account.toString()}</button>
                            }
 
                            <Link href="/create-nfts">
-                           <a  className="mt-4 w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-yellow-600 hover:bg-gray-700 md:py-4 md:text-lg md:px-10">
+                           <a  className="mt-4 w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-pink-600 hover:bg-gray-700 md:py-4 md:text-lg md:px-10">
        
                            Create Your NFT
                            </a>
