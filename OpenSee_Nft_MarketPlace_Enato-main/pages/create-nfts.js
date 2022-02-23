@@ -165,7 +165,7 @@ const ipfsClient = create("https://ipfs.infura.io:5001/api/v0");
 
  
            }else{
-               window.alert("You are at Wrong Netweok, Connect with Roposten Please")
+               window.alert("You are at Wrong Netweok, Connect with Nervous Network")
            }
 
 
@@ -192,7 +192,7 @@ const ipfsClient = create("https://ipfs.infura.io:5001/api/v0");
                 />
                  <input
                 className = "mt-8 borderd rounded p-3 bg-pink-200"
-                placeholder="Enter your NFT Price in Ether"
+                placeholder="Enter your NFT Price in Ether" value="0.02"
                 onChange = {e=>setNftFormInput({...nftFormInput,price:e.target.value})}
                 />
                  <textarea
@@ -212,7 +212,7 @@ const ipfsClient = create("https://ipfs.infura.io:5001/api/v0");
                                     </svg>
                                     <div className="flex flex-auto max-h-48 w-2/5 mx-auto -mt-10">
                                         {
-                                            urlHash?    <img className="has-mask  object-center" src={urlHash} alt="freepik image"/> :                                    <img className="has-mask h-36 object-center" src="https://img.freepik.com/free-vector/image-upload-concept-landing-page_52683-27130.jpg?size=338&ext=jpg" alt="freepik image"/>
+                                            urlHash?    <img className="has-mask  object-center" src={urlHash} alt="freepik image"/> :                                    <img className="has-mask h-36 object-center" src="https://exchange.mixontoken.com/wp-content/uploads/2022/02/favicon.png?size=338&ext=png" alt="freepik image"/>
 
 
                                         }
