@@ -41,7 +41,7 @@ export default function Home() {
 
               window.alert(" Connect Your Wallet Or Please install provider wallet like MetaMask")
                 
-              router.push("https://metamask.io/download.html")
+              
             }
 
 
